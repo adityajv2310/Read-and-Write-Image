@@ -24,17 +24,17 @@ End the program and close the output image windows.
 i) #To Read,display the image
 import cv2
 import random
-col=cv2.imread("su.jpg",1)
+col=cv2.imread("quotes.jpg",1)
 cv2.imshow("col",col)
 cv2.waitKey(0)
 
 #Gray Image
-gray=cv2.imread("su.jpg",0)
+gray=cv2.imread("quotes.jpg",0)
 cv2.imshow("gray",gray)
 cv2.waitKey(0)
 
 ii) #To write the image
-cv2.imwrite("iron.jpg",gray)
+cv2.imwrite("quotes.jpg",gray)
 
 iii) #Find the shape of the Image
 print(col.shape)
@@ -48,7 +48,7 @@ cv2.imshow("col",col)
 cv2.waitKey(0)
 
 v) #To cut and paste portion of image
-color=cv2.imread("su.jpg",1)
+color=cv2.imread("quotes.jpg",1)
 tag=color[300:400,300:400]
 color[50:150,50:150]=tag
 cv2.imshow("color",color)
