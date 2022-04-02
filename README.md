@@ -19,40 +19,54 @@ Use imwrite(filename, image) to write the image.
 ### Step5:
 End the program and close the output image windows.
 ## Program:
-### Developed By:Aditya JV
-### Register Number:212220230002
-i) #To Read,display the image
+##Developed By: Aditya JV
+
+##Register Number: 212220230002
+
+#To Read,display the image
+~~~
 import cv2
 import random
 col=cv2.imread("quotes.jpg",1)
 cv2.imshow("col",col)
 cv2.waitKey(0)
+~~~
 
 #Gray Image
+~~~
 gray=cv2.imread("quotes.jpg",0)
 cv2.imshow("gray",gray)
 cv2.waitKey(0)
+~~~
 
-ii) #To write the image
+ #To write the image
+ ~~~
 cv2.imwrite("quotes.jpg",gray)
+~~~
 
-iii) #Find the shape of the Image
+ #Find the shape of the Image
+ ~~~
 print(col.shape)
+~~~
 
-iv) #To access rows and columns
+ #To access rows and columns
+ ~~~
 import random
 for i in range(100):
 for j in range(col.shape[1]):
 col[i][j]=[random.randint(0,255),random.randint(0,255),random.randint(0,255)]
 cv2.imshow("col",col)
 cv2.waitKey(0)
+~~~
 
-v) #To cut and paste portion of image
+ #To cut and paste portion of image
+ ~~~
 color=cv2.imread("quotes.jpg",1)
 tag=color[300:400,300:400]
 color[50:150,50:150]=tag
 cv2.imshow("color",color)
 cv2.waitKey(0)
+~~~
 
 ## Output:
 
