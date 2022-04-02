@@ -20,7 +20,7 @@ Use imwrite(filename, image) to write the image.
 End the program and close the output image windows.
 ## Program:
 ### Developed By:Aditya JV
-### Register Number:21222023000
+### Register Number:212220230002
 i) #To Read,display the image
 import cv2
 import random
