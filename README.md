@@ -19,7 +19,7 @@ Use imwrite(filename, image) to write the image.
 ### Step5:
 End the program and close the output image windows.
 ## Program:
-~~~
+~~~python
 ##Developed By: Aditya JV
 ##Register Number: 212220230002
 
@@ -65,6 +65,7 @@ tag=color[300:400,300:400]
 color[50:150,50:150]=tag
 cv2.imshow("color",color)
 cv2.waitKey(0)
+
 ~~~
 
 ## Output:
